@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Колледж</string>
+    <string-array name="spec_types">
+        <item>Информ. системы [Бюджет]</item>
+        <item>Информ. системы [Коммерция]</item>
+        <item>Строительство [Бюджет]</item>
+        <item>Строительство [Коммерция]</item>
+        <item>Дизайн [Бюджет]</item>
+        <item>Дизайн [Коммерция]</item>
+    </string-array>
+
+    <string-array name="Roles">
+        <item>Студент</item>
+        <item>Преподаватель</item>
+        <item>Приёмная комиссия</item>
+    </string-array>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTeacherActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить учителя"
+            android:textColor="@color/yellowMedium"
+            android:textSize="40dp"
+            android:layout_marginBottom="50sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_teacher_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:hint="ФИО преподавателя" />
+
+        <EditText
+            android:id="@+id/et_specialty_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:hint="Номер специальности"
+            android:layout_below="@id/et_teacher_full_name"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_workload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Нагрузка (часы)"
+            android:layout_below="@id/et_specialty_id"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/selected_photo_image_view1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="25dp" />
+
+            <Button
+                android:id="@+id/button_select_photo1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Выбрать фото"
+                android:background="@drawable/button"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_save_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:textSize="25dp"
+            android:textAllCaps="false"
+            android:layout_below="@id/et_workload"
+            android:background="@drawable/button"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
